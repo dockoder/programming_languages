@@ -4,20 +4,12 @@ class CarAssembler
 {
 public:
 
-    void printProperties()
-    {
-        m_carBuilder->getCar()->getProperties();
-    }
-
+    void printProperties();
     
-    void createCar(CarBuilder* cb)
-    {
-        m_carBuilder = cb;
-        m_carBuilder->Paint();
-        m_carBuilder->mountGear();
-        m_carBuilder->setHp();
-    }
+    void createCar(CarBuilder* cb);
+
 private:
+    
     CarBuilder* m_carBuilder;
 
 };
