@@ -9,7 +9,7 @@ using namespace std;
 
 void animal_getInfo(const string &descriptionring )
 {
-	unique_ptr<Animal> animal = AnimalFactory::createAnimal(descriptionring);
+    unique_ptr<Animal> animal = AnimalFactory::createAnimal(descriptionring);
     animal->move();
 }
  
